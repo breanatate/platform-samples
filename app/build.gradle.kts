@@ -99,6 +99,7 @@ dependencies {
     implementation(project(":samples:user-interface:text"))
     implementation(project(":samples:user-interface:window-insets"))
     implementation(project(":samples:user-interface:windowmanager"))
+    implementation(project(":samples:background:uidt"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

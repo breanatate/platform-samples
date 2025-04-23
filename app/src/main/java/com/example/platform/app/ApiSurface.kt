@@ -27,6 +27,12 @@ val AccessiblityApiSurface = ApiSurface(
     null,
 )
 
+val BackgroundUidtApiSurface = ApiSurface(
+    "background-uidt",
+    "User-Initiated Data Transfer",
+    null,
+)
+
 val CameraCamera2ApiSurface = ApiSurface(
     "camera-camera2",
     "Camera2",
@@ -185,6 +191,7 @@ val UserInterfaceWindowManagerApiSurface = ApiSurface(
 
 val API_SURFACES = listOf(
     AccessiblityApiSurface,
+    BackgroundUidtApiSurface,
     CameraCamera2ApiSurface,
     ConnectivityAudioApiSurface,
     ConnectivityBluetoothBleApiSurface,

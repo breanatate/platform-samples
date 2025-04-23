@@ -122,6 +122,8 @@ import com.example.platform.ui.text.LineBreak
 import com.example.platform.ui.text.Linkify
 import com.example.platform.ui.text.TextSpanFragment
 import com.example.platform.ui.windowmanager.demos.WindowDemosActivity
+import com.example.uidt.UserDataTransferActivity
+
 
 interface SampleDemo : CatalogItem {
     override val id: String
@@ -1123,6 +1125,14 @@ val SAMPLE_DEMOS by lazy {
             documentation = "https://developer.android.com/jetpack/androidx/releases/window",
             apiSurface = UserInterfaceWindowManagerApiSurface,
             content = WindowDemosActivity::class.java
+        ),
+        ActivitySampleDemo(
+            id = "background-uidt",
+            name = "User-Initiated Data Transfer",
+            description = "Demonstrates how to support user-initiated data transfers.",
+            documentation = "https://developer.android.com/develop/background-work/background-tasks/uidt",
+            apiSurface = BackgroundUidtApiSurface,
+            content = UserDataTransferActivity::class.java,
         ),
     ).associateBy { it.id }
 }
